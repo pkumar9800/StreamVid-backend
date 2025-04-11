@@ -2,7 +2,7 @@ import '../config.js'
 import connectDB from "./db/indexdb.js";
 import {app} from './app.js'
 
-const port = process.env.PORT | 8000
+const port = process.env.PORT || 8000
 
 connectDB()
 .then(() => {
@@ -11,9 +11,9 @@ connectDB()
       throw error;
     })
     app.lisen(port, () => {
-        console.log(`Server is running at port : ${porrt}`);
+        console.log(`Server is running at port : ${port}`);
     })
 })
 .catch((error) => {
-    console.log("MONGO Connection Failed !!! ", error);
+    console.log("MongoDB Connection Failed !!! ", error);
 })
