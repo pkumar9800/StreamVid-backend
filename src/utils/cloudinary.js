@@ -7,10 +7,6 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 })
 
-if(process.env.CLOUDINARY_CLOUD_NAME === undefined){
-  throw new Error("cloudinary is not configured properly")
-}
-
 const uploadOnCloudinary = async (localFilePath) =>{
   try {
     if(!localFilePath) return null
