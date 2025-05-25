@@ -22,6 +22,7 @@ const generateAccessTokenAndRefreshToken = async(user)=>{
 
     return {accessToken, refreshToken, user: safeUser }
   } catch (error) {
+    console.log(error)
     throw new ApiError(500, "Something went wrong while generating Access and refresh token")
   }
 }
@@ -169,7 +170,7 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
   let decodedToken
   try {
-    decodedToken = jwt.verify(token, process.env.REFRESH_KEY_SECRET)
+    decodedToken = jwt.verify(token, process.env.REFRESH_TOKEN_SECRET)
   } catch (err) {
     throw new ApiError(401, "Invalid or expired refresh token")
   }
