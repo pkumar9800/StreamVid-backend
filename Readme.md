@@ -5,7 +5,7 @@
 
 ## 🎥 Demo
 
-[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/0.jpg)](https://www.youtube.com/watch?v=<VIDEO_ID>)
+[Watch the video](https://drive.google.com/file/d/1SBmgwEb6EE7lTq5J6fH3En3X3ig1uC-J/view?usp=sharing)
 
 
 ## ✨ Key Highlights
@@ -85,7 +85,7 @@
 
 
 
-📖 Full API documentation available in [StreamVid Postman Collection](./docs/streamvid-api.postman_collection.json)
+📖 Full API documentation available in [StreamVid Postman Collection]()
 
 ## 🧩 System Design Considerations
 
@@ -105,9 +105,9 @@ You don’t need to set up anything locally to try out the APIs — the backend 
 👉 **HealthCheck:** [https://streamvid-backend.onrender.com/api/v1/healthcheck](https://streamvid-8hve.onrender.com/api/v1/healthcheck)
 
 ### 📌 Quick Demo
-- Open the Postman Collection (provided below).  
+- Open the Postman Collection [here]().  
 - Import it into Postman.  
-- Replace `{{base_url}}` with the Render deployment URL above.  
+- Replace `{{server}}` with the Render deployment URL above.  
 - Start testing APIs instantly — no local setup required.  
 
 ---
